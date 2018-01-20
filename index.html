@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>艺高主页</title>
+	<style type="text/css">
+		body{
+			background-color: #2B2B2B;
+			display: flex;
+			justify-content: center;
+			margin: 0;
+			font-family: "Microsoft YaHei","SimHei"；
+		}
+		#container{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			height: 1814px;
+			width: 1280px;
+		}
+		.charac{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+		#header{
+			height: 77px;
+			background-color: #3E3E3E;
+			display: flex;
+			justify-content: space-between;
+		}
+		.list{
+			width: 16%;
+			height: 77px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: white;
+		}
+		.list:hover{
+			background-color: #8CCF27;
+		}
+		#banner{
+			height: 527px;
+			border-top: 7px solid #8CCF27;
+		}
+		.listnd{
+			width: 16%;
+		}
+		.listrd{
+			height: 77px;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: white;
+		}
+		.listrd:hover{
+			background-color: #8CCF27;
+		}
+		#slogan{
+			height: 300px;
+			background-color: #3E3E3E;
+		}
+		#body{
+			height: 666px;
+			background-color: white;
+		}
+		#detail{
+			height: 142px;
+			background-color: #3E3E3E;
+		}
+		#buttom{
+			height: 102px;
+			background-color: #1C1C1C;
+		}
+		.swiper-container{
+			width: 100%;
+			height: 527px;
+		}
+		.swiper-slide img{
+			width: 100%;
+			height: 527px;
+		}
+		.swiper-slide{
+			display: flex;
+			justify-content: center;
+		}
+		.sloopa:hover{
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="swiper.min.css">
+</head>
+<body>
+	<div id="container">
+		<div class="charac" id="header">
+			<div style="width: 40%; display: flex; justify-content: center; align-items: center;">
+				<img src="img/logo.png" style="width: 420px; height: 80px;">
+			</div>
+			<ul style="width: 60%; display: flex; justify-content: center; align-items: center; justify-content: space-between; list-style: none;">
+				<li class="list">首页</li>
+				<li class="list">新闻动态</li>
+				<li class="list">公司简介</li>
+				<li class="list">产品信息</li>
+				<li class="list">资质荣誉</li>
+				<li class="list" id="connect" onmouseover="connect()" onmouseout="onclos()">联系我们</li>
+			</ul>
+
+		</div>	
+		<div class="charac" id="banner" style="position: relative;">
+			<div style="width: 1280px; height: 231px; position: absolute; display: flex; flex-direction: row-reverse; z-index:3;">
+				<ul style="width: 60%; display: flex; flex-direction: row-reverse; height: 231px; margin: 0px; padding: 0px; justify-content: space-between; list-style-type: none;">
+					<div class="listnd" id="connectid" style="height: 231px; background-color: #2B2B2B; opacity: 0.8; display: flex; flex-direction: column; visibility: hidden;" onmouseover="cancle()" onmouseout="onclos()">
+						<li class="listrd">
+							<p>在线咨询</p>
+						</li>
+						<li class="listrd">
+							<p>加入我们</p>
+						</li>
+						<li class="listrd">
+							<p>地址方式</p>
+						</li>
+					</div>
+					<div class="listnd"></div>
+					<div class="listnd"></div>
+					<div class="listnd"></div>
+					<div class="listnd"></div>
+					<div class="listnd"></div>
+				</ul>
+			</div>
+
+			<div class="swiper-container" style="position: absolute; z-index:2;">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="img/factory.jpg"></div>
+					<div class="swiper-slide"><img src="img/factory2.jpg"></div>
+					<div class="swiper-slide"><img src="img/factory3.jpg"></div>
+				</div>
+				
+				<div class="swiper-pagination"></div>
+
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		</div>
+		<div class="charac" id="slogan" style="display: flex; justify-content: space-around; flex-direction: row; ">
+			<div style="width: 33%; height: 315px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+				<img src="img/slogan.png" style="width: 400px; height: 216px; display: flex; justify-content: center; align-items: center;">
+				<div style="display: flex; justify-content: center; align-items: center; color: white;">
+					<p>适用大风量、低浓度工况</p>
+				</div>
+			</div>
+			<div style="width: 33%; height: 315px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+				<img src="img/slogan2.png" style="width: 400px; height: 216px; display: flex; justify-content: center; align-items: center;">
+				<div style="display: flex; justify-content: center; align-items: center; color: white;">
+					<p>适用大风量、低浓度工况</p>
+				</div>
+			</div>
+			<div style="width: 33%; height: 315px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+				<img src="img/slogan3.png" style="width: 400px; height: 216px; display: flex; justify-content: center; align-items: center;">
+				<div style="display: flex; justify-content: center; align-items: center; color: white;">
+					<p>适用大风量、低浓度工况</p>
+				</div>
+			</div>
+
+		</div>
+		<div class="charac" id="body" style="background-image: url(img/back.png); background-size: cover; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+			<div style="width: 70%; height: 166px;"></div>
+			<div style="width: 70%; height: 500px; display: flex; justify-content: center; align-items: center;">
+				<div style="width: 33%; height: 320px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+					<div style="width: 100%; height: 50%; background-image: url(img/slogan-h.png); background-size: cover;">
+						<img class="sloopa" src="img/slogan.jpeg" style="width: 300px; height: 160px;">
+					</div>
+					<div style="width: 100%; height: 50%; background-image: url(img/slogan2-h.png); background-size: cover;">
+						<img class="sloopa" src="img/slogan2.jpg" style="width: 300px; height: 160px;">
+					</div>
+				</div>
+				<div style="width: 33%; height: 320px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+					<div style="width: 100%; height: 50%; background-image: url(img/slogan2-h.png); background-size: cover;">
+						<img class="sloopa" src="img/slogan2.jpg" style="width: 300px; height: 160px;">
+					</div>
+					<div style="width: 100%; height: 50%; background-image: url(img/slogan3-h.png); background-size: cover;">
+						<img class="sloopa" src="img/slogan3.jpeg" style="width: 300px; height: 160px;">
+					</div>
+				</div>
+				<div style="width: 33%; height: 320px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+					<div style="width: 100%; height: 50%; background-image: url(img/slogan3-h.png); background-size: cover;">
+						<img class="sloopa" src="img/slogan3.jpeg" style="width: 300px; height: 160px;">
+					</div>
+					<div style="width: 100%; height: 50%; background-image: url(img/slogan-h.png); background-size: cover;">
+						<img class="sloopa" src="img/slogan.jpeg" style="width: 300px; height: 160px;">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="charac" id="detail" style="display: flex; justify-content: center; align-items: center;">
+			<div style="width: 300px; height: 100px; display: flex; justify-content: center; align-items: center;" type="button">
+				<div style="width: 30%; height: 90px; display: flex; justify-content: center; align-items: center;">
+					<img src="img/message.png" style="width: 90px; height: 90px;">
+				</div>
+				<div style="width: 50%; height: 90px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+					<div style="width: 100%; height: 20px; display: flex; justify-content: flex-start; align-items: center;">
+						<p style="margin: 0; font-size: 14px; color: #858585;">产品信息</p>
+					</div>
+					<div style="width: 100%; height: 20px; display: flex; justify-content: flex-start; align-items: center;">
+						<p style="margin: 0; font-size: 14px; color: #ACACAC">更详细产品数据</p>
+					</div>
+					<div style="width: 100%; height: 20px; display: flex; justify-content: flex-start; align-items: center;">
+						<a style="margin: 0; font-size: 14px; color: #767676;" href="index.html">》》》</a>
+					</div>
+				</div>
+			</div>
+			<div style="width: 300px; height: 90px; border-left: 2px solid gray; border-right: 2px solid gray; display: flex; justify-content: center; align-items: center;">
+				<div style="width: 30%; height: 90px;">
+					<img src="img/address.png" style="width: 90px; height: 90px;">
+				</div>
+				<div style="width: 50%; height: 90px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+					<div style="width: 100%; height: 20px; display: flex; justify-content: flex-start; align-items: center;">
+						<p style="margin: 0; font-size: 14px; color: #858585;">我们的地址</p>
+					</div>
+					<div style="width: 100%; height: 20px; display: flex; justify-content: flex-start; align-items: center;">
+						<p style="margin: 0; font-size: 14px; color: #ACACAC">恭候您的亲临</p>
+					</div>
+					<div style="width: 100%; height: 20px; display: flex; justify-content: flex-start; align-items: center;">
+						<a style="margin: 0; font-size: 14px; color: #767676;" href="index.html">》》》</a>
+					</div>
+				</div>
+			</div>
+			<div style="width: 300px; height: 90px; display: flex; justify-content: center; align-items: center;">
+				<div style="width: 30%; height: 90px;">
+					<img src="img/cup.png" style="width: 90px; height: 90px;">
+				</div>
+				<div style="width: 50%; height: 90px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+					<div style="width: 100%; height: 20px; display: flex; justify-content: flex-start; align-items: center;">
+						<p style="margin: 0; font-size: 14px; color: #858585;">公司资质</p>
+					</div>
+					<div style="width: 100%; height: 20px; display: flex; justify-content: flex-start; align-items: center;">
+						<p style="margin: 0; font-size: 14px; color: #ACACAC">有保障的品质</p>
+					</div>
+					<div style="width: 100%; height: 20px; display: flex; justify-content: flex-start; align-items: center;">
+						<a style="margin: 0; font-size: 14px; color: #767676;" href="index.html">》》》</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="charac" id="buttom" style="display: flex; justify-content: center; align-items: center; flex-direction: column; font-size: 12px; color: #575757;">
+			<div style="width: 60%; height: 25px; display: flex; justify-content: center; align-items: center;">
+				<p style="margin-right: 5px; width: 50%; height: 25px; display: flex; flex-direction: row-reverse;">地址：江苏省宜兴市和桥镇南新东路22号</p>
+				<p style="margin-left: 5px; width: 50%; height: 25px;">©1985-2017 江苏艺高环境工程有限公司</p>
+			</div>
+			<div style="width: 60%; height: 25px; display: flex; justify-content: center; align-items: center;">
+				<p style="margin-right: 5px; width: 50%; height: 25px; display: flex; flex-direction: row-reverse;">电话：0510-87871081</p>
+				<p style="margin-left: 5px; width: 50%; height: 25px;">备案号：苏ICP备16009612号-1</p>
+			</div>
+		</div>
+	</div>
+	<script src="swiper.min.js"></script>
+	<script>
+		var connectid = document.getElementById('connectid');
+		var timer = 500;
+		var closetimer = 0;
+
+		var mySwiper = new Swiper ('.swiper-container', {
+			direction: 'horizontal',
+			loop: true,
+
+    		pagination: '.swiper-pagination',
+    
+    		nextButton: '.swiper-button-next',
+    		prevButton: '.swiper-button-prev',
+    		autoplay: 3000,
+    		speed: 200,
+    		autoplayDisableOnInteraction: false,
+		})
+
+		function connect(){
+			connectid.style.visibility = 'visible';
+
+			if (closetimer) {
+				window.clearTimeout(closetimer);
+				closetimer = null;
+			}
+		}
+
+		function clos(){
+			connectid.style.visibility = 'hidden';
+		}
+
+		function onclos(){
+			closetimer = window.setTimeout(clos, 100);
+		}
+
+		function cancle(){
+			if (closetimer) {
+				window.clearTimeout(closetimer);
+				closetimer = null;
+			}
+		}
+
+	</script>
+</body>
+</html>
